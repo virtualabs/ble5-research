@@ -1,0 +1,48 @@
+Below is the result of my Dieharder test, based on my implementation of BLE 5
+CSA #2 PRNG. This PRNG cannot generate an infinite series of values, so I'm
+not sure it is the right way to do it.
+
+#=============================================================================#
+#            dieharder version 3.31.1 Copyright 2003 Robert G. Brown          #
+#=============================================================================#
+   rng_name    |           filename             |rands/second|
+ file_input_raw|                    /tmp/buf.bin|  7.19e+07  |
+#=============================================================================#
+        test_name   |ntup| tsamples |psamples|  p-value |Assessment
+#=============================================================================#
+   diehard_birthdays|   0|       100|     100|0.00028057|   WEAK
+      diehard_operm5|   0|   1000000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 1 times
+  diehard_rank_32x32|   0|     40000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 2 times
+    diehard_rank_6x8|   0|    100000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 2 times
+   diehard_bitstream|   0|   2097152|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 4 times
+        diehard_opso|   0|   2097152|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 5 times
+        diehard_oqso|   0|   2097152|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 5 times
+         diehard_dna|   0|   2097152|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 5 times
+diehard_count_1s_str|   0|    256000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 6 times
+diehard_count_1s_byt|   0|    256000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 6 times
+ diehard_parking_lot|   0|     12000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 6 times
+    diehard_2dsphere|   2|      8000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 6 times
+    diehard_3dsphere|   3|      4000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 8 times
+     diehard_squeeze|   0|    100000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 8 times
+        diehard_sums|   0|       100|     100|0.02550359|  PASSED
+# The file file_input_raw was rewound 8 times
+        diehard_runs|   0|    100000|     100|0.00000000|  FAILED
+        diehard_runs|   0|    100000|     100|0.00000000|  FAILED
+# The file file_input_raw was rewound 9 times
+       diehard_craps|   0|    200000|     100|0.00000000|  FAILED
+       diehard_craps|   0|    200000|     100|0.00000000|  FAILED
+
+(interrupted)
